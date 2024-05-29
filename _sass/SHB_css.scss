@@ -1,3 +1,33 @@
+// assets/css/styles.scss
+
+
+
+$font_color: #494846;
+$back_ground_color: #EAE7DC;
+// $back_ground_color: #D8C3A5;
+// $link_color: #D24546;
+$link_color: #E98074;
+$container_bg_color: #EAE7DC;
+// $container_bg_color: #D8C3A5;
+
+
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $font_color;
+  text-align: left;
+  background-color: $back_ground_color;
+}
+
+a {
+  color: $link_color;
+}
+
+
 img { 
     border-radius:5%;
 }
@@ -7,6 +37,7 @@ img {
     padding-bottom:7px; 
     margin-top:22px; 
     margin-bottom:22px;
+    background-color: $container_bg_color;
 }
 
 .navbar {
@@ -59,7 +90,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url($baseurl + "/images/thumbs/3dtrain.jpeg");
+  background-image: url($baseurl + "/assets/images/thumbs/3dtrain.jpeg");
 }
 
 .embed-container {
@@ -77,10 +108,11 @@ img {
 
 .embed-container-spleen {
   height: 155px;
-  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+  background-image: url($baseurl + "/assets/images/thumbs/spleen.jpg");
 }
 
 .embed-container-leuk {
   height: 112px;
-  background-image: url($baseurl + "/images/thumbs/spleen.jpg");
+  background-image: url($baseurl + "/assets/images/thumbs/spleen.jpg");
 }
+
