@@ -8,4 +8,4 @@ author: Shasha Liao
 
 I am currently using an app called BoldVoice to improve my American English pronunciation.
 
-{% include table.html dataset=site.data.bold_voice %}
+{% include csv_to_table.html dataset=site.data.bold_voice %}
