@@ -9,6 +9,7 @@ $back_ground_color: #EAE7DC;
 $link_color: #E98074;
 $container_bg_color: #EAE7DC;
 // $container_bg_color: #D8C3A5;
+// $container-width: 1;
 
 
 
@@ -50,14 +51,21 @@ img {
     margin-bottom: 5px;
 }
 
+// .container {
+//   max-width: 1140px;
+// }
+
 .container-fluid {
   max-width: 800px;
+  // width: 100%;
+  // max-width: $container-width;
 }
 
 .container-footer {
   margin-right: auto;
   margin-left: auto;
   max-width: 800px;
+  // max-width: $container-width;
   padding-left:  20px;
   padding-right: 20px;
 }
