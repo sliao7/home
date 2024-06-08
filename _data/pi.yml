@@ -1,17 +1,22 @@
-- name: Dr. Richard Feynman
-  photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
+- name: Dr. Shasha Liao
+  photo: shasha.png
+  info: Senior Data Scientist, Paramount Global
+  email: ssliao@outlook.com
+  github: https://github.com/sliao7
+  # researchgate: https://www.researchgate.net/
   scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
   cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2022) Ph.D. Mathematics, Georgia Institute of Technology",
+      "(2021) M.S. Computational Science and Engineering, Georgia Institute of Technology",
+      "(2013) B.S. Mathematics and Applied Mathematics, Hunan University",
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    [
+      "(2022) Ph.D. Mathematics, Georgia Tech",
+      "(2021) M.S. CSE, Georgia Tech",
+      "(2013) B.S. Mathematics, HUN",
+    ]

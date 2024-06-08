@@ -1,27 +1,18 @@
 <br/>
-<section id="footer">
-<div class="container-footer">
-  <div class="panel-footer">
-	  <div class="row">
-		<div class="col-sm-4">
-		    <h5>About</h5>	
-            <p>{{ site.affiliation }}</p>
-		</div>
+<section id="footer" class="container-footer">
+	
+	<h2>Get in Touch</h2>	
 
-		<div class="col-sm-4">
-		    <h5>Contact</h5>	
-            <p>{{ site.contact }}</p>
-		</div>
+	<!-- <p>{{ site.contact }}</p> -->
+	<div class="touch">
+		<a href="mailto:{{ site.contact.email }}" target="_blank"><i class="fa fa-envelope fa-1x"></i> Email Shasha</a> 
+		<a href="{{ site.contact.template-link }}"><i class="fa fa-github fa-1x"></i> Site Template</a>
+	</div>
 
-		<div class="col-sm-4">
-		    <h5>Coordinates</h5>	
-            <p>{{ site.location }}</p>
-		</div>
-	  </div>
-
-      <center><p>&copy {{ "now" | date: "%Y" }} {{site.title | escape }} </p></center>
+	<p>&copy {{ "now" | date: "%Y" }} {{site.title | escape }} </p> 
+	  
 	</div>
   </div>
 </div>
 
-<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+<!-- <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}" style="color: #f8f9fa;"></script> -->

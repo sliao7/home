@@ -1,74 +1,389 @@
 // assets/css/styles.scss
 
+@use 'sass:color';
 
-
-$font_color: #494846;
-$back_ground_color: #EAE7DC;
+$font-color-dark: #494846;
+$font-color-light: #f8f9fa;
+$back_ground_color: $font-color-light;
 // $back_ground_color: #D8C3A5;
 // $link_color: #D24546;
 $link_color: #E98074;
-$container_bg_color: #EAE7DC;
-// $container_bg_color: #D8C3A5;
-// $container-width: 1;
+// $link_color: $font-color-dark;
+// $container_bg_color: #e0dfdc;
+$container_bg_color: #e9ecef;
+$container-width: 1240px;
 
+h1, h2, h3, h4, h5, h6, p, li {
+  font-family: 'Roboto', sans-serif, monospace;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+
+h4, .h4 {
+  font-size: 1.6rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.4rem;
+}
+
+p, .p {
+  font-size: 1.35;
+}
+
+.lead {
+  font-size: 1.171875rem;
+  font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  .display-sm {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-md {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 992px) {
+  .display-lg {
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 993px) {
+  .display-xl {
+    font-size: 5.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
 
 
 body {
   margin: 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.9375rem;
+  padding: 0;
+  height: 100%;
+  // font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Roboto', sans-serif, monospace;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
-  color: $font_color;
+  color: $font-color-dark;
   text-align: left;
   background-color: $back_ground_color;
 }
 
+
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  }
+
 a {
   color: $link_color;
 }
-
-
-img { 
-    border-radius:5%;
+/* Hover state */
+a:hover {
+  color: $font-color-light; /* Hover text color */
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
+
+
+// img { 
+//     border-radius:50%;
+// }
+
+  
+.homebackground {
+  // height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  // margin-top: -100px;
+  // overflow: scroll;
+  /* background: linear-gradient(90deg, #add8e6, #ffb6c1); */
+  animation: backgroundAnimation 70s infinite alternate;
+}
+
+// #4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, 
+// #ecf0f1;
+
+@keyframes backgroundAnimation {
+  0% {
+      background: #4484ce;
+  }
+  20% {
+      background: #1ad7c0;
+  }
+  40% {
+      background: #ff9b11;
+  }
+  60% {
+      background: #9b59b6;
+  }
+  80% {
+      background: #ff7f7f;
+  }
+  100% {
+      background: #808282;
+  }
+}
+
+.bubble {
+  position: absolute;
+  top: 50;
+  bottom: -100px; /*Start slightly off screen */
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  animation: moveBubbles 15s linear infinite;
+  opacity: 1;
+}
+
+@keyframes moveBubbles {
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  25% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh); /* Move to the top */
+      opacity: 1;
+  }
+}
+
+.words {
+  position: relative;
+  animation: move-words 10s linear ;
+  white-space: nowrap; /* Ensure the text does not wrap */
+  // overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@keyframes move-words {
+  0% {
+      left: -15%;
+  }
+  50% {
+      left: 15%;
+  }
+  100% {
+      left: 0%;
+  }
+}
+
+/* Media query for screens narrower than 600px */
+@media (max-width: 800px) {
+    .words {
+        font-size: 1.3rem; /* Smaller font size for narrow screens */
+    }
+}
+
 
 .jumbotron {
     padding:20px; 
-    padding-bottom:7px; 
-    margin-top:22px; 
-    margin-bottom:22px;
+    margin-top:0px; 
+    margin-bottom:1px;
     background-color: $container_bg_color;
 }
 
+// @media (max-width: 569.98px) {
+//   .jumbotron .row {
+//     text-align: center; /* Optional: Center-align the text */
+//   }
+
+//   .jumbotron img {
+//     margin-bottom: 20px; /* Optional: Add space below the image */
+//   }
+// }
+
+
 .navbar {
   margin-bottom: 20px;
-  border-bottom: 4px solid var(--secondary);
+  // font-size: larger;
+  // background-color: #ffb6c1;
+  // border-bottom: 4px solid var(--secondary);
 }
+
+
+.icon {
+  margin-top: 20px;
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+.icon:last-child {
+  margin-right: 0; /* Remove the margin on the last icon */
+}
+
+.icon a {
+  color: $font-color-dark
+}
+/* Hover state */
+.icon a:hover {
+  // color: #6e6d6b; /* Hover text color */
+  color: $font-color-light
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust spacing between icons as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.icon-container-grey {
+  color: #6e6d6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust spacing between icons as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */ 
+}
+
+
+
 
 .btn {
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-// .container {
-//   max-width: 1140px;
-// }
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+/* Custom outline button style */
+.btn-custom-outline {
+  color: $font-color-dark; /* Text color */
+  background-color: $font-color-light;
+  // border-width: 2px;
+  border-style: solid;
+}
+
+.btn-custom-outline:hover,
+.btn-custom-outline:focus,
+.btn-custom-outline:active {
+  color: $font-color-light; /* Text color on hover */
+  background-color: $font-color-dark;
+}
+
+
+.container {
+  max-width: $container-width;
+  margin: 0;
+  padding: 4rem 2rem;
+}
 
 .container-fluid {
-  max-width: 800px;
-  // width: 100%;
+  max-width: $container-width;
+  padding: 4rem 2rem;
+  // width: 500px;
   // max-width: $container-width;
 }
 
+.container-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80%;
+  // margin-top: -50px;
+  // max-width: 600px; /* Adjust this width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: -10%;
+  background-color: transparent; /* Optional: set a background color */
+}
+
+.container-center h1,
+.container-center h3 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.container-center div {
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.container-center .home-buttons {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+
 .container-footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $font-color-dark;
+  font-weight: 100;
   margin-right: auto;
   margin-left: auto;
   max-width: 800px;
-  // max-width: $container-width;
   padding-left:  20px;
   padding-right: 20px;
 }
+
+
+.container-footer a {
+    color: $font-color-dark; /* Hover text color */
+    margin-right: 20px;
+  }
+
+.container-footer a:last-child {
+  margin-right: 0; /* Remove the margin on the last icon */
+}
+  
+
+.container-footer a:hover {
+    // color: $font-color-light; /* Hover text color */
+    color: color.scale($font-color-dark, $lightness:30%);
+  }
+
+.container-footer .touch {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+  
+
 
 .well-collapse {
   padding-left:  20px;
@@ -124,3 +439,14 @@ img {
   background-image: url($baseurl + "/assets/images/thumbs/spleen.jpg");
 }
 
+.navbar-custom {
+  transition: background-color 0.3s;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.navbar-colored {
+  background-color: rgb(209, 206, 206, 0.5);
+}
