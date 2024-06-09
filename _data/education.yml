@@ -1,24 +1,32 @@
 - school: Georgia Institute of Technology
   location: Atlanta, GA
-  degrees:
-    - degree_name: "Ph.D. in Mathematics (Adviser: Prof. Zhiwu Lin)"
+  experiences:
+    - major: Mathematics
+      degree: Ph.D.
+      adviser: Prof. Zhiwu Lin
       years: Jan. 2017 - Jan. 2022
-    - degree_name: Master in Computational Science and Engineering
+    - major: Computational Science and Engineering
+      degree: Master
       years: Aug. 2019 - Aug. 2021
-    - degree_name: "Visiting Scholar (Adviser: Prof. Zhiwu Lin)"
+    - major: Mathematics
+      position: Visiting Scholar
+      adviser: Prof. Zhiwu Lin
       years: Sep. 2015 - Sep. 2016
   logo_filename: georgia_institute_of_technology_logo.jpeg
 
 - school: Nankai Univiersity
   location: Tianjin, China
-  degrees:
-    - degree_name: "Ph.D. candidate in Mathematics (Adviser: Prof. Chungen Liu)"
+  experiences:
+    - major: Mathematics
+      position: Ph.D. candidate
+      adviser: Prof. Chungen Liu
       years: Sep. 2013 - Sep. 2015
   logo_filename: nankai_logo.jpeg
 
 - school: Hunan University
   location: Changsha, China
-  degrees:
-    - degree_name: B.S. in Mathematics and Applied Mathematics
+  experiences:
+    - major: Mathematics and Applied Mathematics
+      degree: B.S.
       years: Sep. 2009 - Jul. 2013
   logo_filename: hunan_university_logo.jpeg

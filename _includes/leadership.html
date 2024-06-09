@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron bg-white">
     <div class="container, container-fluid">
       <h2 class="display-4 mb-5"> Leadership </h2>
       <div class="row">
@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="col-lg-7 col-md-12"> 
-            <img class="bg-white mb-3 shadow" src="{{ site.url }}{{ site.baseurl }}/assets/images/certificates/GT_TA_Math_1552.png" style="max-width: 100%; height: auto;">
+          {% include carousel.html id="carousel_leadership" interval=5000 slides=site.data.carousel.leadership_slides %}
         </div>
   
       </div>

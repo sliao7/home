@@ -14,28 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-// assets/js/script.js
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const links = document.querySelectorAll('.navbar a');
-
-//     for (const link of links) {
-//         link.addEventListener('click', (e) => {
-//             e.preventDefault();
-
-//             const targetId = link.getAttribute('href').substring(1);
-//             const targetSection = document.getElementById(targetId);
-
-//             if (targetSection) {
-//                 window.scrollTo({
-//                     top: targetSection.offsetTop - 50, // Adjust for navbar height
-//                     behavior: 'smooth'
-//                 });
-//             }
-//         });
-//     }
-// });
-
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar-custom');
@@ -47,3 +25,28 @@ window.addEventListener('scroll', function() {
       navbar.classList.add('navbar-transparent');
     }
   });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const carousels = document.querySelectorAll('.carousel');
+
+  carousels.forEach(function(carousel) {
+    const id = carousel.id;
+    const interval = carousel.getAttribute('data-bs-interval') || 2000;
+
+    const bsCarousel = new bootstrap.Carousel(carousel, {
+      interval: parseInt(interval, 10)
+    });
+
+    const carouselInner = carousel.querySelector('.carousel-inner');
+    
+    carouselInner.addEventListener('mouseenter', function() {
+      bsCarousel.pause();
+    });
+
+    carouselInner.addEventListener('mouseleave', function() {
+      bsCarousel.cycle();
+    });
+  });
+});
+  

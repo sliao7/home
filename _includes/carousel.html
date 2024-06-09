@@ -1,0 +1,28 @@
+<div id="{{ include.id }}" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="{{ include.interval | default: 2000 }}">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      {% for slide in include.slides %}
+      <button type="button" data-bs-target="#{{ include.id }}" data-bs-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="true" aria-label="Slide {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      {% for slide in include.slides %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{{ slide.url }}" class="d-block w-100" alt="{{ slide.alt }}">
+      </div>
+      {% endfor %}
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#{{ include.id }}" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#{{ include.id }}" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
