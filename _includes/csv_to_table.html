@@ -1,4 +1,4 @@
-<table class="table table-dark table-striped table-hover">
+<table class="table table-light table-striped table-hover mt-6 border-dark">
   {% for row in include.dataset %}
     {% if forloop.first %}
     <tr>
@@ -9,7 +9,7 @@
     {% endif %}
 
     {% tablerow pair in row %}
-      {{ pair[1] }}
+      {{ pair[1]| markdownify }}
     {% endtablerow %}
 
 {% endfor %}

@@ -1,29 +1,34 @@
 - company_name: Paramount Global
   location: Remotely in Atlanta, GA
   position: Senior Data Scientist
+  area: Content Strategy
   years: Jan. 2024 - Present
   logo_filename: paramount_logo.jpeg
 
 - company_name: Paramount Global
   location: Remotely in Atlanta, GA
   position: Data Scientist
+  area: Content Strategy
   years: Feb. 2022 - Dec. 2023
   logo_filename: paramount_logo.jpeg
 
 - company_name: Georgia Institute of Technology
   location: Atlanta, GA
-  position: Graduate Research Assistant in Mathematics
+  position: Graduate Research Assistant
+  area: Fluid Dynamics, PDEs
   years: May 2021 - Dec. 2021
   logo_filename: georgia_tech_logo.jpeg
 
 - company_name: GeniusMesh
   location: Atlanta, GA
-  position: Data Scientist - NLP
+  position: Data Scientist
+  area: NLP
   years: Dec. 2020 - May 2021
   logo_filename: geniusmesh_logo.jpeg
 
 - company_name: Georgia Institute of Technology
   location: Atlanta, GA
-  position: Graduate Teaching/Research Assistant in Mathematics
+  position: Graduate Teaching/Research Assistant
+  area: Mathematics/Fluid Dynamics, PDEs
   years: Jan. 2017 - Dec. 2020
   logo_filename: georgia_tech_logo.jpeg

@@ -13,9 +13,27 @@ $link_color: #E98074;
 $container_bg_color: #e9ecef;
 $container-width: 1240px;
 
-h1, h2, h3, h4, h5, h6, p, li {
+
+/* General styling for the document */
+body {
   font-family: 'Roboto', sans-serif, monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px; /* Padding for the body content */
 }
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styles */
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 
 h1, .h1 {
   font-size: 3rem;
@@ -100,6 +118,7 @@ body {
 
 p {
   display: block;
+  margin-bottom: 1.5em;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -111,7 +130,7 @@ a {
 }
 /* Hover state */
 a:hover {
-  color: $font-color-light; /* Hover text color */
+  color: $font-color-dark; /* Hover text color */
   text-decoration: underline; /* Optional: Add underline on hover */
 }
 
@@ -129,7 +148,7 @@ a:hover {
   // margin-top: -100px;
   // overflow: scroll;
   /* background: linear-gradient(90deg, #add8e6, #ffb6c1); */
-  animation: backgroundAnimation 70s infinite alternate;
+  animation: backgroundAnimation 50s infinite alternate;
 }
 
 // #4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, 
@@ -164,7 +183,7 @@ a:hover {
   height: 10px;
   background: #fff;
   border-radius: 50%;
-  animation: moveBubbles 15s linear infinite;
+  animation: moveBubbles 10s linear infinite;
   opacity: 1;
 }
 
@@ -328,7 +347,7 @@ a:hover {
   // margin-top: -50px;
   // max-width: 600px; /* Adjust this width as needed */
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: -10%;
+  margin-top: -5%;
   background-color: transparent; /* Optional: set a background color */
 }
 
@@ -344,7 +363,7 @@ a:hover {
 }
 
 .container-center .home-buttons {
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 0px;
 }
 
@@ -449,4 +468,13 @@ a:hover {
 
 .navbar-colored {
   background-color: rgb(209, 206, 206, 0.5);
+  // background-color: rgba(24, 21, 21, 0.5);
 }
+
+
+// /* main.scss */
+// @import 'navbar';
+
+// body {
+//   @include navbar-color(#3498db); // Example usage
+// }

@@ -1,32 +1,33 @@
 <div class="jumbotron">
     <div class="container, container-fluid">
-      <h2 class="display-4 mb-5"> Education </h2>
+      <h2 class="display-4 mb-5 text-center"> Education </h2>
 
       <div class="row">
         {% for education in site.data.education %}
         <div class = 'col-md'> 
           <div class="card bg-transparent border-0">
             <div class="card-body text-center">
-              <img class="bg-white mb-3 rounded-circle shadow" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo_jpeg/schools/{{ education.logo_filename }}" style="max-width:200px; max-height:200px;">
+              <img class="bg-white mb-3 rounded-circle shadow" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo_jpeg/schools/{{ education.logo_filename }}" style="max-width:120px; max-height:120px;">
               <h5 class="card-title mb-6">{{ education.school }}</h5>
               <ul class="mt-6 list-unstyled">
                 {% for experience in education.experiences %}
 
                   <li class="justify-content-between text-left">
-                    {% if experience.degree %} 
-                      
+
+                    {% if experience.degree %}                
                     <p class="font-weight-bold">
-                        <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/icon_jpeg/degree_girl.jpeg" alt="Degree Obtained" style="width:40px; height:40px;"> -->
-                        {{ experience.degree }} in {{ experience.major }} 
-                    </p>
-                      
+                        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/icon_jpeg/degree_girl.jpeg" alt="Degree Obtained" style="width:40px; height:40px; padding-left: -60px;">
+                        {{ experience.degree }} <span class="font-weight-normal"> in </span> {{ experience.major }} 
+                    </p>  
                     {% endif %}
 
                     {% if experience.position %}
-
-                    <!-- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/icon_jpeg/study.png" alt="Degree Obtained" style="width:40px; height:40px;"> -->
-                    <p class="font-weight-bold">{{ experience.position }} in {{ experience.major }} </p>
+                    <p class="font-weight-bold">
+                    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/icon_jpeg/study.png" alt="Degree Obtained" style="width:40px; height:40px; padding-left: -60px;">
+                    {{ experience.position }} <span class="font-weight-normal"> in </span> {{ experience.major }} </p>
+                    </p>
                     {% endif %}
+
                     {% if experience.adviser %} <p> Adviser: {{ experience.adviser }} </p>{% endif %}
                     <p class="lead">{{ experience.years }}</p>
                   </li>
