@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-block-start: 30px;
 }
 
 
@@ -237,22 +238,9 @@ a:hover {
     background-color: $container_bg_color;
 }
 
-// @media (max-width: 569.98px) {
-//   .jumbotron .row {
-//     text-align: center; /* Optional: Center-align the text */
-//   }
-
-//   .jumbotron img {
-//     margin-bottom: 20px; /* Optional: Add space below the image */
-//   }
-// }
-
 
 .navbar {
   margin-bottom: 20px;
-  // font-size: larger;
-  // background-color: #ffb6c1;
-  // border-bottom: 4px solid var(--secondary);
 }
 
 
@@ -468,13 +456,4 @@ a:hover {
 
 .navbar-colored {
   background-color: rgb(209, 206, 206, 0.5);
-  // background-color: rgba(24, 21, 21, 0.5);
 }
-
-
-// /* main.scss */
-// @import 'navbar';
-
-// body {
-//   @include navbar-color(#3498db); // Example usage
-// }

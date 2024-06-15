@@ -3,14 +3,12 @@
   experiences:
     - major: Mathematics
       degree: Ph.D.
-      adviser: Prof. Zhiwu Lin
       years: Jan. 2017 - Jan. 2022
     - major: Computational Science and Engineering
       degree: Master
       years: Aug. 2019 - Aug. 2021
     - major: Mathematics
       position: Visiting Scholar
-      adviser: Prof. Zhiwu Lin
       years: Sept. 2015 - Sept. 2016
   logo_filename: georgia_institute_of_technology_logo.jpeg
 
@@ -19,7 +17,6 @@
   experiences:
     - major: Mathematics
       position: Ph.D. candidate
-      adviser: Prof. Chungen Liu
       years: Sept. 2013 - Sept. 2015
   logo_filename: nankai_logo.jpeg
 
