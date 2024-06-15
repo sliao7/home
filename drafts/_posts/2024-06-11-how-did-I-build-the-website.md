@@ -11,7 +11,7 @@ sitemap: false
 
 1. To record and share my thoughts and ideas
 
-### Two free templates
+### Two great templates
 
 1. Visual from [hashirshoaeb](https://github.com/hashirshoaeb/home)
 2. Code (HTML, Jekyll, SCSS, and JavaScript) from [sbryngelson](https://github.com/sbryngelson/academic-website-template)
@@ -28,7 +28,3 @@ sitemap: false
 2. HTML
 3. JavaScript
 4. Bootstrap
-
-### Five weeks of devoted learning and working on weekday nights and weekends
-
-Note: the last number is a close estimation.

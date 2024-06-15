@@ -1,11 +1,62 @@
----
-layout: dynamic
----
+<!DOCTYPE html>
+<html>
 
-  <div id="homeid" class="col-sm-7 col-xs-12">
-	{{ content }}
-  </div>
+  {% include head.html %}
+  <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+
+  <body>
+
+    <section class="homebackground">
+      {% include header.html %}
+    <div class="min-vh-100 d-flex align-content-center align-items-center">
+        
+    <div class="container-center">
+        <h1 class="display-sm display-md display-lg display-xl" style="color: #f8f9fa">Shasha Liao</h1>
+        <h3 class="words h4 h5-md h6-sm mb-2 font-weight-light" style="color: #f8f9fa;">| Data Scientist | Mathematician | Researcher | Teacher | Artist |</h3>
+    
+    <div class="home-buttons col-sm-9 col-xs-12">
+      <a class="btn btn-custom-outline  btn-lg" href="{{ site.url }}{{ site.baseurl }}/#about" role="button" aria-label="Learn more about me">About me</a>
+      <a class="btn btn-custom-outline  btn-lg" href="{{ site.url }}{{ site.baseurl }}/blog/" role="button" aria-label="Check out my blog">My blog</a>
+    </div>
+      <div class="icon icon-container">
+      <a class="icon" target="_blank" rel="noopener noreferrer" href="https://github.com/sliao7" aria-label="My github"><i class="fa fa-github-square fa-2x"></i></a>
+      <a class="icon" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=WFSwosMAAAAJ&amp;hl=en" aria-label="My google"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+      <a class="icon" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shasha-liao/" aria-label="My linkedin"><i class="fa fa-linkedin-square fa-2x"></i></a>
+      <a class="icon" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100010417996990" aria-label="My facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a class="icon" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/shasha_liao33/" aria-label="My instagram"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+    
+    </div>
+    
+    </div>
   
-  <!-- <div id="newsid" class="col-sm-5 col-xs-12" >
-	{% include sidebar.html %}
-  </div> -->
+  </section>
+    
+  <section class="aboutme", id="about">
+    {% include aboutme.html %}
+  </section>
+
+  <section class="experience">
+      {% include experiences.html %}
+  </section>
+
+  <section class="education">
+      {% include education.html %}
+  </section>
+
+  <section class="leadership">
+      {% include leadership.html %}
+  </section>
+
+  <section class="activities">
+      {% include activities.html %}
+  </section>
+
+
+  {% include footer.html %}
+    
+  </body>
+
+</html>
+
+
