@@ -2,5 +2,5 @@
 title: "Home"
 layout: homelay
 sitemap: false
-permalink: /
+permalink: /home/
 ---
