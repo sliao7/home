@@ -12,17 +12,51 @@ I will be visiting LA soon for two weeks. This page lists the places I want to v
 
 #### Paramount Studio Tour [[Website]](https://www.paramountstudiotour.com/studio-tours.html)
 
+- Time: 2.5 hours
+- Ticket: $65
+- Description: behind the scene experience
+
 #### Universal Studios Hollywood [[Website]](https://www.universalstudioshollywood.com/web/en/us)[[Guide]](https://www.17ybm.com/la-universal-studios-hollywood/)
+
+- Time: 2 days
+- Ticket: $149 (Buy 1 day get a 2nd day free)
+- Description: studio tour, themed lands
 
 #### Warner Bros Studio Tour Hollywood [[Website]](https://www.wbstudiotour.com)
 
+- Time: 3 hours
+- Ticket: $73
+- Description:
+
+#### Hollywood Sign [[Website]](https://www.hollywoodsign.org/hiking)
+
+- Time: an hour
+- Ticket: free
+- Description: hiking all the way to Griffith Observatory
+
 #### Griffith Observatory [[Website]](https://griffithobservatory.org/visit/)[[Guide]](https://www.17ybm.com/griffith-observatory/)
+
+- Time: 5-6 hours (1 day togther with Hollywood Sign)
+- Ticket: free
+- Description: explore the universe!
 
 #### Los Angeles County Museum of Art [[Website]](https://www.lacma.org)
 
+- Time:
+- Ticket: $28
+- Description:
+
 #### Getty Center [[Website]](https://www.getty.edu/visit/center/)[[Guide]](https://www.17ybm.com/getty-center/)
 
-#### Hollywood Sign Walking Tour [[Website]](https://www.tripadvisor.com/AttractionProductReview-g32655-d14948512-The_Official_Hollywood_Sign_Walking_Tour_in_Los_Angeles-Los_Angeles_California.html)
+- Time:
+- Ticket: free
+- Description:
+
+#### SCUBA Diving on Catalina Island (optional) [[Website]](https://blog.padi.com/road-trip/)
+
+- Time: N/A
+- Ticket: N/A
+- Description: I won't be able to dive this time. Save for my next visit!
 
 ### Resources
 
