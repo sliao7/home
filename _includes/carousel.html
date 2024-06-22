@@ -10,7 +10,7 @@
     <div class="carousel-inner">
       {% for slide in include.slides %}
       <div class="carousel-item {% if forloop.first %}active{% endif %}">
-        <img src="{{ slide.url }}" class="d-block w-100" alt="{{ slide.alt }}">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ slide.url }}" class="d-block w-100" alt="{{ slide.alt }}">
       </div>
       {% endfor %}
     </div>
