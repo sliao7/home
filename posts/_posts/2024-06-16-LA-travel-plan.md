@@ -42,13 +42,13 @@ I will be visiting LA soon for two weeks. This page lists the places I want to v
 
 #### Los Angeles County Museum of Art [[Website]](https://www.lacma.org)
 
-- Time:
+- Time: 1 day
 - Ticket: $28
 - Description:
 
 #### Getty Center [[Website]](https://www.getty.edu/visit/center/)[[Guide]](https://www.17ybm.com/getty-center/)
 
-- Time:
+- Time: 1 day
 - Ticket: free
 - Description:
 
