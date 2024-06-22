@@ -29,7 +29,7 @@ navbar_color: "#e71919"
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
-      <li style="font-size: 18pt"><a href="{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
+      <li style="font-size: 18pt"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
     {% endfor %}
   </ul>
 {% endfor %}
