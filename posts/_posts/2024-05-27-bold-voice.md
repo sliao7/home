@@ -31,4 +31,11 @@ My current plan (updated on May 19, 2024) to improve my English is in the follow
 3. Increase my vocabulary by looking up and mindfully remembering new words I encounter everywhere.
 4. Watch YouTute Videos and listen to Podcasts on tips and other people's advice to learn English. This has been super helpful!
 
+Notes on pitch:
+
+- In English, every word with more than one syllable has a stressed syllable -- a longer, more emphasized syllable.
+- English speakers communicate meaning by more dramatically raising or lowering the pitch of the stressed syllable in the most important words of the thought.
+- We use a large rise in pitch to introduce new information.
+- We use an extra high pitch to clarify or correct previously misunderstood information.
+
 {% include csv_to_table.html dataset=site.data.bold_voice %}
