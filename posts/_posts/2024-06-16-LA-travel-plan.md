@@ -13,20 +13,20 @@ I will be visiting LA soon for two weeks. This page lists the places I want to v
 #### Paramount Studio Tour [[Website]](https://www.paramountstudiotour.com/studio-tours.html)
 
 - Time: 2.5 hours
-- Ticket: $65
+- Ticket: $65 for a standard tour
 - Description: behind the scene experience
 
 #### Universal Studios Hollywood [[Website]](https://www.universalstudioshollywood.com/web/en/us)[[Guide]](https://www.17ybm.com/la-universal-studios-hollywood/)
 
 - Time: 2 days
 - Ticket: $149 (Buy 1 day get a 2nd day free)
-- Description: studio tour, themed lands
+- Description: studio tour and theme parks
 
 #### Warner Bros Studio Tour Hollywood [[Website]](https://www.wbstudiotour.com)
 
 - Time: 3 hours
 - Ticket: $73
-- Description:
+- Description: behind the scene experience
 
 #### Hollywood Sign [[Website]](https://www.hollywoodsign.org/hiking)
 
@@ -44,13 +44,13 @@ I will be visiting LA soon for two weeks. This page lists the places I want to v
 
 - Time: 1 day
 - Ticket: $28
-- Description:
+- Description: get inspired by Picasso, Kandinsky, and more
 
 #### Getty Center [[Website]](https://www.getty.edu/visit/center/)[[Guide]](https://www.17ybm.com/getty-center/)
 
 - Time: 1 day
 - Ticket: free
-- Description:
+- Description: get inspired by Monet, van Gogh, and more
 
 #### SCUBA Diving on Catalina Island (optional) [[Website]](https://blog.padi.com/road-trip/)
 
