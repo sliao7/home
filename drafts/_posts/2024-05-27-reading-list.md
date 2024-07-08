@@ -3,7 +3,7 @@ title: "How to Read a Book?"
 date: 2024-05-26
 layout: post
 sitemap: false
-tags: [reading]
+tag: Learning
 ---
 
 - Find a book that I am interested in reading

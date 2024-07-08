@@ -4,6 +4,7 @@ post-date: 2024-02-25
 author: Shasha Liao
 layout: post
 header_img: red_envelopes.png
+tag: Culture
 ---
 
 A friend asked me to tell him more about the tradition of red envelopes. Here is a simple response with some of my personal thoughts. I might add more next year, and the year after next year? Who knows?

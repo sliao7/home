@@ -5,6 +5,7 @@ layout: post
 sitemap: false
 author: Shasha Liao
 header_img: watch_tv.jpeg
+tag: Entertainment
 ---
 
 Last week, someone introduced me to another person by saying, "This is Shasha. She works for the company that makes SpongeBob". I love this cute introduction, although I still can not enjoy SpongeBob after trying to watch it twice. But I enjoyed watching some other good shows over the last two years. Here is an incomplete list of them:

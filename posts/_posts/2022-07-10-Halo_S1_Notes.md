@@ -5,6 +5,7 @@ layout: post
 sitemap: false
 author: Shasha Liao
 header_img: Halo_Season_1.jpeg
+tag: Entertainment
 ---
 
 # Halo Notes

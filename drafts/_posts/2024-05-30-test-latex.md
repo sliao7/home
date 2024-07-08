@@ -2,7 +2,7 @@
 layout: post
 title: "2D Euler Equations"
 date: 2024-05-31
-# categories: Math
+tag: Math
 ---
 
 Consider the 2D Euler incompressible equations

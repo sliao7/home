@@ -24,7 +24,7 @@ navbar_color: "#e71919"
   </ul>
 {% endfor %} -->
 
-{% for category in site.categories %}
+<!-- {% for category in site.categories %}
 
   <h3>{{ category[0] }}</h3>
   <ul>
@@ -32,6 +32,22 @@ navbar_color: "#e71919"
       <li style="font-size: 18pt"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
     {% endfor %}
   </ul>
+{% endfor %} -->
+
+{% for category in site.categories %}
+
+<h2>{{ category[0] }}</h2>
+
+{% assign posts_by_tag = category[1] | group_by_exp: "post", "post.tag" %}
+{% for tag in posts_by_tag %}
+
+<h5>{{ tag.name }}</h5>
+<ul>
+  {% for post in tag.items %}
+    <li style="font-size: 18pt"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
+  {% endfor %}
+</ul>
+{% endfor %}
 {% endfor %}
 
 <!-- <ul>

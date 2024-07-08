@@ -4,6 +4,7 @@ date: 2023-08-21
 layout: post
 author: Shasha Liao
 header_img: NYC_to_ATL.png
+tag: Traveling
 ---
 
 从纽约回亚特兰大五天了，一直在搬家和收拾屋子，现在终于有空来写点东西记录一下这段时光。

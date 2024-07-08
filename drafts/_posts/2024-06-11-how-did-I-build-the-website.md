@@ -3,6 +3,7 @@ title: "How did I build this website?"
 date: 2024-06-11
 layout: post
 sitemap: false
+tag: Notes
 ---
 
 <p class="font-weight-bold"> This is a preliminary outline. I will provide more detailed information later. :)</p>>

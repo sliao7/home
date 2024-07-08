@@ -4,6 +4,7 @@ date: 2023-07-22
 layout: post
 author: Shasha Liao
 header_img: the_lion_king.jpeg
+tag: Entertainment
 ---
 
 I finally got the chance to see The Lion King on Broadway! I've seen this story for at least four times. Each time with a very different experience and understanding.

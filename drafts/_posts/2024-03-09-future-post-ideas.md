@@ -3,6 +3,7 @@ title: Future Post Ideas
 date: 2024-03-09
 Author: Shasha Liao
 layout: post
+tag: Notes
 ---
 
 - how do you manage your finances in Python?

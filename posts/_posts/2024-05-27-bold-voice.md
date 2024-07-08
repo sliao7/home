@@ -5,6 +5,7 @@ layout: post
 sitemap: false
 author: Shasha Liao
 header_img: english-pronunciation.jpeg
+tag: Learning
 ---
 
 Although many of my American friends constantly tell me that my English is very good, I have always known that it needs to be improved and have yet to take much action. But this year, I met a few very friendly and honest people who directly or indirectly suggested I improve my English, which greatly motivated me.

@@ -6,6 +6,7 @@ sitemap: false
 author: Shasha Liao
 header_img: hollywood.jpg
 img_credit: Photo by <a href="https://unsplash.com/@ventiviews?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Venti Views</a> on <a href="https://unsplash.com/photos/hollywood-signage-on-hill-GGwBS_kuKB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tag: Traveling
 ---
 
 I will be visiting LA soon for two weeks. This page lists the places I want to visit and the activities I am interested in doing.

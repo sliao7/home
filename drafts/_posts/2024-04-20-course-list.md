@@ -3,6 +3,7 @@ title: My Course List
 date: 2024-04-20
 author: Shasha Liao
 layout: post
+tag: Learning
 ---
 
 This is an incomplete list. Working in progress!
