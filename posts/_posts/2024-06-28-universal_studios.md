@@ -8,7 +8,7 @@ header_img: universal_studios_hollywood.jpg
 tag: Entertainment
 ---
 
-I visited Universal Studios twice. On the first day (2024/06/28), I focused on experiencing different rides. If you are visiting alone, you should go directly to the Single Rider line which is free and a lot faster than the general line. On the second day (2024/07/04), my priorities were taking beautiful photos, which I will share later, and watching the special July 4th firework in the park and the amazing music light show at Hogwarts Castle.
+I visited Universal Studios twice recently. On my first visit, on June 28, 2024, I focused on experiencing different rides. If you’re visiting alone, I highly recommend heading straight to the Single Rider line—it's free and much faster than the general line. On my second visit, on July 4, 2024, my main priorities were taking beautiful photos (which I will share later), watching the special July 4th fireworks in the park, and enjoying the amazing music light show at Hogwarts Castle.
 
 ### Studio Tour
 
