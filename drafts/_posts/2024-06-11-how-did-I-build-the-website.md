@@ -1,5 +1,5 @@
 ---
-title: "How did I build this website?"
+title: "How Did I Build This Website?"
 date: 2024-06-11
 layout: post
 sitemap: false

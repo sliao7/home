@@ -1,5 +1,5 @@
 ---
-title: "Why do I build my website?"
+title: "Why Do I Build My Website?"
 date: 2024-06-11
 layout: post
 sitemap: false
