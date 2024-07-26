@@ -1,21 +1,24 @@
 <div class="jumbotron bg-white">
-    <div class="container, container-fluid">
-      <h2 class="display-4 mb-5 text-center"> Experiences </h2>
-      <div class="row">
-  
-        {% for experience in site.data.experiences %}
-        <div class="col-3 text-center">
-          <img class="border mb-3 shadow-lg" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo_jpeg/companies/{{ experience.logo_filename }}">
+  <div class="container, container-fluid">
+    <h2 class="display-4 mb-5 text-center"> Experiences </h2>
+    <div class="row">
+      
+      {% for experience in site.data.experiences %}
+      <div class="col-12 mb-4">
+        <div class="card h-100 bg-white d-flex flex-row border-0">
+          <img class="card-img-left" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo_jpeg/companies/{{ experience.logo_filename }}" alt="{{ experience.company_name }} logo" style="width: 100px; height: auto; object-fit: contain;">
+          <div class="card-body">
+            <h5 class="card-title">{{ experience.company_name }}</h5>
+            <p class="card-text">
+              <strong>{{ experience.position }}</strong> in {{ experience.area }}<br>
+              <small class="text-muted">{{ experience.years }}</small>
+            </p>
+          </div>
         </div>
-        <div class="col-9"> 
-          <h3 class="h5-md h6-sm"> {{ experience.company_name }} </h3>
-          <p class="h6 font-weight-bold"> 
-            {{ experience.position }} <span class="font-weight-normal"> in {{ experience.area }}</span> 
-            <span class="h6 font-weight-light" style="float: right;"> {{ experience.years }} </span>
-          </p>
-        </div>
-        {% endfor %}
-  
       </div>
+      {% endfor %}
+
     </div>
+  </div>
 </div>
+
