@@ -34,7 +34,7 @@ Other than books, I also plan to read articles that I am interested in on WSJ to
 
 I am still trying to figure out a good way to track my new vocabulary. The idea is to build a personal connection with each word by tracking when, where, and how I encouter it, and how often I use them in the futre. However, the current inputting strategy is not efficient enough. Here are some ideas to improve:
 
-1. For each word, I manually input the spelling, the word chrunk, the sentence in which I acquired it, and the source. Use Python to write the date when I encounter and record it automatically.
+1. For each word, I manually input the spelling, the word chunk, the sentence in which I acquired it, and the source. Use Python to write the date when I encounter and record it automatically.
 2. Using some language library in Python to get the pronounciation, the definition, and the synonums for each word.
 3. I haven't yet decided how to input topic. Doing it manually involves some necessary thinking to deepen my understanding of the word, but this is not the most efficient and systematically way.
 4. I still need to think more about how to manage the data and present the words.
