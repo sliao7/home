@@ -13,3 +13,4 @@ tag: Notes
 - My sources of happiness.
 - Manage my time, energy, money, and space (inspired by Katherine Liu)
 - Embrace a clutter-free lifestyle
+- How to type phonetic symbols on a Macbook?
