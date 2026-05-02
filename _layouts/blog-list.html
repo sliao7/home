@@ -13,12 +13,16 @@
       style="width:100vw; display:block; padding-top:70px;"
     />
 
+    <div class="tagline">
+    Exploring science, art, and life — from fluid dynamics to moving images, and the world beyond. 
+    </div>
+
     <!-- MAIN CONTAINER -->
     <div style="width:100%; background:#e9ecef; padding:40px 5vw; box-sizing:border-box;">
 
       {% for category in site.categories %}
 
-        <h2 style="margin-top:40px;">{{ category[0] }}</h2>
+        <h2 style="margin-top:40px;">{{ category[0] | upcase }}</h2>
 
         {% assign posts_by_tag = category[1] | group_by_exp: "post", "post.tag" %}
 
