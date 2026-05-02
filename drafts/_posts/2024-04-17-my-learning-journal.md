@@ -4,7 +4,6 @@ date: 2024-04-17
 updated-date: May 12, 2024
 author: Shasha Liao
 layout: post
-header_img: learning.jpeg
 tag: Learning
 ---
 
