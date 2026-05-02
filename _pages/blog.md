@@ -5,58 +5,29 @@ sitemap: false
 permalink: /blog/
 navbar_color: "#e71919"
 ---
-
-<!-- <ul>
-  {% for post in site.posts %}
-    <li>
-      {{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title}}</a>
-    </li>
-  {% endfor %}
-</ul> -->
-
-<!-- {% for tag in site.tags %}
-
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %} -->
-
-<!-- {% for category in site.categories %}
-
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li style="font-size: 18pt"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
-    {% endfor %}
-  </ul>
-{% endfor %} -->
-
 {% for category in site.categories %}
 
-<h2>{{ category[0] }}</h2>
+## {{ category[0] }}
 
 {% assign posts_by_tag = category[1] | group_by_exp: "post", "post.tag" %}
 {% for tag in posts_by_tag %}
 
-<h5>{{ tag.name }}</h5>
-<ul>
-  {% for post in tag.items %}
-    <li style="font-size: 18pt"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="float-right"> {{ post.date | date_to_string }} </span></li>
-  {% endfor %}
-</ul>
-{% endfor %}
-{% endfor %}
+### {{ tag.name }}
 
-<!-- <ul>
-    {% for post in site.posts %}
-        {% if post.categories contains "movies" %}
-            <li>
-                {{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title}}</a>
-                {{ post.excerpt }}
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul> -->
+<div class="card-container">
+{% for post in tag.items %}
+<a class="post-card" href="{{ post.url }}">
+{% if post.image %}
+<div class="card-image" style="background-image: url('{{ post.image }}');"></div>
+{% endif %}
+<div class="card-content">
+<h3>{{ post.title }}</h3>
+<p class="card-date">{{ post.date | date_to_string }}</p>
+<p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+</div>
+</a>
+{% endfor %}
+</div>
+
+{% endfor %}
+{% endfor %}

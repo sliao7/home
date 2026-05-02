@@ -3,20 +3,113 @@
 
   {% include head.html %}
 
-  <body>
+  <body style="margin:0; padding:0;">
 
     {% include header.html %}
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/blog/header_stars.jpg", style="width: 100%; margin: 0%; padding-top: 70px;" />
-    <div class="jumbotron">
-    <div class="container, container-fluid", style="max-width: 1000px; margin-top: -6%; background-color:#e9ecef; position: relative; z-index: 1;">
-      <div class="row">
-        {{ content }}
-      </div>
-    </div>
+
+    <!-- HEADER IMAGE -->
+    <img
+      src="{{ site.url }}{{ site.baseurl }}/assets/images/blog/header.jpg"
+      style="width:100vw; display:block; padding-top:70px;"
+    />
+
+    <!-- MAIN CONTAINER -->
+    <div style="width:100%; background:#e9ecef; padding:40px 5vw; box-sizing:border-box;">
+
+      {% for category in site.categories %}
+
+        <h2 style="margin-top:40px;">{{ category[0] }}</h2>
+
+        {% assign posts_by_tag = category[1] | group_by_exp: "post", "post.tag" %}
+
+        {% for tag in posts_by_tag %}
+
+          <h3 style="margin:20px 0;">{{ tag.name }}</h3>
+
+          <!-- RESPONSIVE GRID (NO GAPS WHEN FEW ITEMS) -->
+          <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            width: 100%;
+            align-items: start;
+          ">
+
+            {% for post in tag.items %}
+
+              <a href="{{ post.url }}"
+                 style="text-decoration:none; color:inherit;">
+
+                <!-- CARD -->
+                <div style="
+                  background:white;
+                  border-radius:12px;
+                  overflow:hidden;
+                  height:360px;
+                  display:flex;
+                  flex-direction:column;
+                  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+                "
+                onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.15)'"
+                onmouseout="this.style.transform='none'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.08)'">
+
+                  <!-- IMAGE -->
+                  <div style="
+                    height:180px;
+                    width:100%;
+                    background-size:cover;
+                    background-position:center;
+                    background-color:#ddd;
+                    background-image:url('{% if post.header_img %}{{ site.baseurl }}/assets/images/blog/{{ post.header_img }}{% else %}{{ site.baseurl }}/assets/images/blog/default.png{% endif %}');
+                  ">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div style="padding:14px; display:flex; flex-direction:column; flex:1;">
+
+                    <h4 style="
+                      margin:0 0 8px 0;
+                      font-size:16px;
+                      line-height:1.2;
+                      height:40px;
+                      overflow:hidden;
+                    ">
+                      {{ post.title }}
+                    </h4>
+
+                    <div style="font-size:12px; color:#888; margin-bottom:10px;">
+                      {{ post.date | date_to_string }}
+                    </div>
+
+                    <div style="
+                      font-size:14px;
+                      color:#444;
+                      overflow:hidden;
+                      display:-webkit-box;
+                      -webkit-line-clamp:4;
+                      -webkit-box-orient:vertical;
+                    ">
+                      {{ post.excerpt | strip_html | truncate: 120 }}
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            {% endfor %}
+
+          </div>
+
+        {% endfor %}
+
+      {% endfor %}
+
     </div>
 
     {% include footer.html %}
 
   </body>
-
 </html>

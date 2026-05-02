@@ -465,3 +465,56 @@ a:hover {
 .navbar-colored {
   background-color: rgba(209, 206, 206, 0.5);
 }
+
+img.blog-header {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-card {
+  display: block;              /* 🔥 critical */
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  cursor: pointer;             /* optional but nice */
+}
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

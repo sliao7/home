@@ -4,7 +4,6 @@ date: 2024-08-04
 layout: post
 sitemap: false
 author: Shasha Liao
-header_img: english-pronunciation.jpeg
 tag: Learning
 ---
 
