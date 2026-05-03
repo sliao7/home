@@ -1,6 +1,5 @@
 ---
 title: Halo Season 1 Notes
-date: 2022-07-10
 layout: post
 sitemap: false
 author: Shasha Liao

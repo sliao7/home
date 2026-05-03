@@ -1,6 +1,5 @@
 ---
 title: My Journey of The Lion King
-date: 2023-07-22
 layout: post
 author: Shasha Liao
 header_img: the_lion_king.jpeg

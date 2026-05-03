@@ -1,6 +1,5 @@
 ---
 title: "Welcome to My Website"
-date: 2026-5-02
 layout: post
 sitemap: false
 tag: Thinking

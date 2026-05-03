@@ -1,6 +1,5 @@
 ---
 title: Red Envelopes
-post-date: 2024-02-25
 author: Shasha Liao
 layout: post
 header_img: red_envelopes.png

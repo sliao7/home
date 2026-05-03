@@ -1,6 +1,5 @@
 ---
 title: Back to Atlanta from NYC
-date: 2023-08-21
 layout: post
 author: Shasha Liao
 header_img: NYC_to_ATL.png
