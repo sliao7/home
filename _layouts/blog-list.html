@@ -7,15 +7,55 @@
 
     {% include header.html %}
 
-    <!-- HEADER IMAGE -->
+  <!-- HEADER IMAGE -->
+  <div style="
+    position: relative;
+    width: 100%;
+    margin: 84px auto 0;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    line-height: 0;
+  ">
     <img
       src="{{ site.url }}{{ site.baseurl }}/assets/images/blog/header.jpg"
-      style="width:100vw; display:block; padding-top:70px;"
+      style="width: 100%; display: block;"
     />
+    <!-- Responsive gradient fade -->
+    <div style="
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: clamp(120px, 25vw, 380px);
+      background: linear-gradient(
+        to bottom,
+        rgba(238, 240, 243, 0) 0%,
+        rgba(238, 240, 243, 0.2) 30%,
+        rgba(238, 240, 243, 0.6) 55%,
+        rgba(238, 240, 243, 0.9) 75%,
+        rgba(238, 240, 243, 1) 100%
+      );
+    "></div>
 
-    <div class="tagline">
-    Exploring science, art, and life — from fluid dynamics to moving images, and the world beyond. 
+    <!-- Responsive tagline -->
+    <div class="tagline" style="
+      position: absolute;
+      bottom: clamp(10px, 2vw, 10px);
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0 clamp(10px, 4vw, 40px);
+      font-family: 'Clicker Script';
+      font-size: clamp(0.9rem, 1.8vw, 2.1rem);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      line-height: 1.0;
+      text-shadow: 0 1px 8px rgba(238,240,243,0.9);
+    ">
+      Exploring science, art, and life, <br>
+      from fluid dynamics to moving images, and the world beyond.
     </div>
+  </div>
 
     <!-- MAIN CONTAINER -->
     <div style="width:100%; background:#e9ecef; padding:40px 5vw; box-sizing:border-box;">
