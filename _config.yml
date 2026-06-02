@@ -30,6 +30,10 @@ include:
   - .htaccess
   - _pages
 
+# Sass
+sass:
+  quiet_deps: true
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
