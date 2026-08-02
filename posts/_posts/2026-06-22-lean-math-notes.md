@@ -44,6 +44,7 @@ Personal notes on learning the book [**Mathematics in Lean**](https://leanprover
 | `ring` | Prove equalities in a commutative (semi)ring by normalization |
 | `simp [h]` | Simplify the goal using simp lemmas, optionally including `h` |
 | `linarith` | Discharge linear arithmetic goals over ordered fields/rings |
+| `norm_num` | Automatically normalize numerical expressions in the goal |
 
 ---
 
